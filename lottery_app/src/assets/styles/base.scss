@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+input,
+button,
+a {
+  outline: 0 none !important;
+}
+
+#app {
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: $font_base;
+  overflow-x: hidden;
+}
+
+/* 公共文字样式 */
+.link-text {
+  color: $primary;
+  user-select: none;
+  text-decoration: none;
+}
+.link-text:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.white-text {
+  color: $white;
+  user-select: none;
+}
+.gray-text {
+  color: $gray;
+}
+.green-text {
+  color: $green;
+}
+.red-text {
+  color: $red;
+}
+.blue-text {
+  color: $blue;
+}
+.grown-text {
+  color: $grown;
+}
+.yellow-text {
+  color: $yellow;
+}
+
+// 通用边距样式（1rem到50rem）
+@for $i from 0 through 50 {
+  .mg-#{$i} {
+    margin: $i + rem;
+  }
+  .mg-t-#{$i} {
+    margin-top: $i + rem;
+  }
+  .mg-b-#{$i} {
+    margin-bottom: $i + rem;
+  }
+  .mg-l-#{$i} {
+    margin-left: $i + rem;
+  }
+  .mg-r-#{$i} {
+    margin-right: $i + rem;
+  }
+
+  .pd-#{$i} {
+    padding: $i + rem;
+  }
+  .pd-t-#{$i} {
+    padding-top: $i + rem;
+  }
+  .pd-b-#{$i} {
+    padding-bottom: $i + rem;
+  }
+  .pd-l-#{$i} {
+    padding-left: $i + rem;
+  }
+  .pd-r-#{$i} {
+    padding-right: $i + rem;
+  }
+}

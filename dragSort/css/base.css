@@ -1,0 +1,86 @@
+@import url('../iconfont/iconfont.css');
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-size: 16px;
+}
+
+ul {
+    width: 100%;
+    list-style: none;
+    font-size: 0;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+ul>li {
+    width: 100%;
+    height: 42px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    border-bottom: 1px solid #eee;
+    padding: 0 .8rem;
+    transition: all .2s;
+    position: absolute;
+    z-index: 1;
+}
+
+ul>li>div>span {
+    vertical-align: middle;
+}
+
+ul>li>div>.number {
+    height: 22px;
+    width: 22px;
+    line-height: 24px;
+    display: inline-block;
+    margin-right: 12px;
+    border-radius: 50%;
+    background: #046ffa;
+    font-size: .8rem;
+    text-align: center;
+    color: #fff;
+}
+
+ul>li>.iconfont {
+    font-size: 1.56rem;
+    color: #aeaeae;
+}
+
+/* 高亮 */
+ul>.high-light {
+    background: rgba(78, 155, 255, .8);
+    z-index: 2;
+}
+
+ul>.high-light>.iconfont {
+    color: #fff;
+}
+
+ul>.high-light>div>.number {
+    background: #fff;
+    color: #046ffa;
+}
+
+/* 选择 */
+ul>.select-mode>div>.number {
+    background: #aeaeae;
+}
+
+ul>.select-mode>.iconfont {
+    display: none;
+}
